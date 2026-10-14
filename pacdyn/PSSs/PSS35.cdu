@@ -1,0 +1,26 @@
+DCDU
+(
+(*****CDU Plot for Windows *****
+( nc ) ( nome cdu )
+     6 CTRL6
+(EFPAR (nome) (     valor      )
+DEFPAR #TW1                   3.
+DEFPAR #TN1             .2331865
+DEFPAR #TD1            .06641442
+DEFPAR #KP1             1.340861
+DEFPAR #LMIN                -0.1
+DEFPAR #LMAX                 0.1
+(nb)i(tipo) (stip)s(vent) (vsai) ( p1 )( p2 )( p3 )( p4 ) (vmin) (vmax)
+   1 IMPORT WMAQ          X1
+   2 WSHOUT        X1     X2     #TW1  1     #TW1
+   3 LEDLAG        X2     X3     1     #TN1  1     #TD1
+   4 LEDLAG        X3     X4     1     #TN1  1     #TD1
+   5 GANHO         X4     X5     #KP1
+   6 LIMITA        X5     X6                              LMIN   LMAX
+   7 EXPORT VSAD   X6
+(EFVAL (stip) (vdef) ( d1 )
+DEFVAL        LMIN   #LMIN
+DEFVAL        LMAX   #LMAX
+FIMCDU
+999999
+FIM

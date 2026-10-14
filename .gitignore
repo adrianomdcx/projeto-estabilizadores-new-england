@@ -1,0 +1,7 @@
+# Arquivos temporários do Windows e dos editores.
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+~$*
+.DS_Store

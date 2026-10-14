@@ -1,0 +1,296 @@
+
+
+
+     PacDyn - Small Signal Stability Analysis of Electrical Power Systems
+     ====================================================================
+
+
+               CEPEL - Centro de Pesquisas de Energia Eletrica
+               -----------------------------------------------
+
+                      Version 9.9.18 - March 2025
+
+
+
+
+ Initializing dynamic data
+ 
+ Reading dynamic data ....... C:\Users\adriano\Desktop\ufrj\masseran2\neweng_v2\neweng.4.stb
+ 
+ Case Title
+ --------------------------------------------------------------------------------
+ ** New England Modificado **
+ 
+ ULOG  2 File : neweng.sav
+ 
+ ULOG  4 File : neweng.out
+ 
+ %Warning: ULOG  4.
+           This ULOG will not be used by PacDyn.
+ 
+ ULOG  8 File : neweng.plt
+ 
+ %Warning: ULOG  8.
+           This ULOG will not be used by PacDyn.
+ 
+ ULOG  9 File : neweng.log
+ 
+ %Warning: ULOG  9.
+           This ULOG will not be used by PacDyn.
+ 
+ %Warning: ANATEM DCTE execution code.
+           The execution code data will be ignored.
+ 
+ ANATEM ARQV execution code
+ ---------------------------------------------
+ System Frequency :    60.0 Hertz
+ System MVA Base  :   100.0 MVA
+ 
+ Initializing network data
+ 
+ Reading network data ....... C:\Users\adriano\Desktop\ufrj\masseran2\neweng_v2\neweng.sav
+
+ ANAREDE history case #0001 restored.
+
+ Case title:
+ SISTEMA NEW ENGLAND                                                             
+
+ Info on restored case:
+ DATA: 12/06/2023 / HORA: 08:13:11   / VERSAO DO PROGRAMA: V11.07.00             
+
+ Comments on restored case:
+ None
+
+ ------------------------------------------------------------------------------
+ Load Flow Convergence Report (without factorization, from converged voltages)
+ ------------------------------------------------------------------------------
+
+ Maximum specified tolerances:
+ -----------------------------
+ Active   power:      1.00000 (%      ).
+ Reactive power:      1.00000 (%      ).
+
+ Maximum differences found   :
+ -----------------------------
+ Active   power:  0.71625E-03 (MW     ) on bus     5.
+ Reactive power:  0.38042E-03 (Mvar   ) on bus     1.
+
+ ------------------------------------------------------------------------------
+
+ ------------------------------------------------------------------------------
+ Load Flow Convergence Report (with factorization, from power flow injections)
+ ------------------------------------------------------------------------------
+
+ Maximum specified tolerances:
+ -----------------------------
+ Voltage module:      0.00020 (pu     ).
+ Voltage angle :      0.01000 (degrees).
+ Active   power:      1.00000 (%      ).
+ Reactive power:      1.00000 (%      ).
+
+ Maximum differences found   :
+ -----------------------------
+ Voltage module:  0.10388E-05 (pu     ) on bus     5.
+ Voltage angle :  0.17460E-04 (degrees) on bus     7.
+ Active   power:  0.71625E-03 (MW     ) on bus     5.
+ Reactive power:  0.38042E-03 (Mvar   ) on bus     1.
+
+ ------------------------------------------------------------------------------
+ 
+ ULOG  3 File : PSSs\PSS31.cdu
+ 
+ Reading dynamic data ....... C:\Users\adriano\Desktop\ufrj\masseran2\neweng_v2\PSSs\PSS31.cdu
+
+
+                         USER DEFINED CONTROLLER DATA
+                         ----------------------------
+
+    UDC (------Block------)  (- Variable -) (-------- Parameters ---------) (---Limit----)
+    No.   No.  Type  Stype   Input   Output   P1      P2      P3      P4     Vmin    Vmax 
+  ------ ---- ------ ------  ------  ------ ------  ------  ------  ------  ------  ------
+
+       1 --------------------------- CTRL1
+              DEFPAR                        #TW1    3.
+              DEFPAR                        #TN1    .2772196
+              DEFPAR                        #TD1    .06963145
+              DEFPAR                        #KP1    10.35125
+              DEFPAR                        #LMIN   -0.1
+              DEFPAR                        #LMAX   0.1
+            1 IMPORT WMAQ            X1
+            2 WSHOUT         X1      X2     #TW1    1       #TW1
+            3 LEDLAG         X2      X3     1       #TN1    1       #TD1
+            4 GANHO          X3      X4     #KP1
+            5 LIMITA         X4      X5                                     LMIN    LMAX
+            6 EXPORT VSAD    X5
+              DEFVAL                 LMIN   #LMIN
+              DEFVAL                 LMAX   #LMAX
+FIMCDU
+ 
+ Reading dynamic data ....... C:\Users\adriano\Desktop\ufrj\masseran2\neweng_v2\neweng.4.stb
+ 
+ ULOG  3 File : neweng.blt
+ 
+ Reading dynamic data ....... C:\Users\adriano\Desktop\ufrj\masseran2\neweng_v2\neweng.blt
+
+ ANATEM Classic Generator Model or Infinite Bus - DMDG MD01
+ -----------------------------------------------------------------------
+  MOD   L'd   L'q   Ra       H       D    MVA    Freq C   Observation
+ +----+-----+-----+-----+---------+-----+-------+----+-+---------------+
+  0100                                           60.0    Ideal Source
+
+ ANATEM Salient Pole Generator Model - DMDG MD02
+ -------------------------------------------------------------------------
+   MOD  SAT   Ld   L'd   L"d    Ll   T'do  T"do   Ra      H      MVA    C
+              Lq   L'q   L"q         T'qo  T"qo           D      Freq
+ +----+----+-----+-----+-----+-----+-----+-----+-----+---------+-------+-+
+  0001 0001 113.8  35.0 28.80  15.8  5.60  0.08  0.00     5.938  1200.0 N
+             68.1   0.0 28.80        0.00 0.150           0.000    60.0
+
+
+ ANATEM Round Rotor Generator Model - DMDG MD03
+ -------------------------------------------------------------------------
+   MOD  SAT   Ld   L'd   L"d    Ll   T'do  T"do   Ra      H      MVA    C
+              Lq   L'q   L"q         T'qo  T"qo           D      Freq
+ +----+----+-----+-----+-----+-----+-----+-----+-----+---------+-------+-+
+  0002 0001 113.8  35.0 28.80  15.8  5.60  0.08  0.00     4.938  1200.0 N
+             68.1  35.0 28.80        5.60 0.150           0.000    60.0
+
+ ANATEM Saturation Curve - DCST
+ -----------------------------------
+  MOD  T   P1(A)    P2(B)    P3(C)  
+ +----+-+--------+--------+--------+
+  0001 2   0.0130   7.9200   0.8000
+ 
+ Reading dynamic data ....... C:\Users\adriano\Desktop\ufrj\masseran2\neweng_v2\neweng.4.stb
+ 
+ ULOG  3 File : neweng.cdu
+ 
+ Reading dynamic data ....... C:\Users\adriano\Desktop\ufrj\masseran2\neweng_v2\neweng.cdu
+
+                         USER DEFINED CONTROLLER DATA
+                         ----------------------------
+
+    UDC (------Block------)  (- Variable -) (-------- Parameters ---------) (---Limit----)
+    No.   No.  Type  Stype   Input   Output   P1      P2      P3      P4     Vmin    Vmax 
+  ------ ---- ------ ------  ------  ------ ------  ------  ------  ------  ------  ------
+
+      30 --------------------------- AVR_30
+            1 ENTRAD                 VREF
+            2 IMPORT VOLT            VT
+            3 IMPORT VSAD            VSAD
+            4 SOMA           VREF    X3
+                            -VT
+                             VSAD
+            5 LEDLAG         X3      EFD    100.0   0.0     1.0     0.05
+            6 EXPORT EFD     EFD
+FIMCDU
+      31 --------------------------- AVR_31
+            1 ENTRAD                 VREF
+            2 IMPORT VOLT            VT
+            3 IMPORT VSAD            VSAD
+            4 SOMA           VREF    X3
+                            -VT
+                             VSAD
+            5 LEDLAG         X3      EFD    100.0   0.0     1.0     0.05
+            6 EXPORT EFD     EFD
+FIMCDU
+      32 --------------------------- AVR_32
+            1 ENTRAD                 VREF
+            2 IMPORT VOLT            VT
+            3 IMPORT VSAD            VSAD
+            4 SOMA           VREF    X3
+                            -VT
+
+                             VSAD
+            5 LEDLAG         X3      EFD    100.0   0.0     1.0     0.05
+            6 EXPORT EFD     EFD
+FIMCDU
+      33 --------------------------- AVR_33
+            1 ENTRAD                 VREF
+            2 IMPORT VOLT            VT
+            3 IMPORT VSAD            VSAD
+            4 SOMA           VREF    X3
+                            -VT
+                             VSAD
+            5 LEDLAG         X3      EFD    100.0   0.0     1.0     0.05
+            6 EXPORT EFD     EFD
+FIMCDU
+      34 --------------------------- AVR_34
+            1 ENTRAD                 VREF
+            2 IMPORT VOLT            VT
+            3 IMPORT VSAD            VSAD
+            4 SOMA           VREF    X3
+                            -VT
+                             VSAD
+            5 LEDLAG         X3      EFD    100.0   0.0     1.0     0.05
+            6 EXPORT EFD     EFD
+FIMCDU
+      35 --------------------------- AVR_35
+            1 ENTRAD                 VREF
+            2 IMPORT VOLT            VT
+            3 IMPORT VSAD            VSAD
+            4 SOMA           VREF    X3
+                            -VT
+                             VSAD
+            5 LEDLAG         X3      EFD    100.0   0.0     1.0     0.05
+            6 EXPORT EFD     EFD
+FIMCDU
+      36 --------------------------- AVR_36
+            1 ENTRAD                 VREF
+            2 IMPORT VOLT            VT
+            3 IMPORT VSAD            VSAD
+            4 SOMA           VREF    X3
+                            -VT
+                             VSAD
+            5 LEDLAG         X3      EFD    100.0   0.0     1.0     0.05
+            6 EXPORT EFD     EFD
+FIMCDU
+      37 --------------------------- AVR_37
+            1 ENTRAD                 VREF
+            2 IMPORT VOLT            VT
+            3 IMPORT VSAD            VSAD
+            4 SOMA           VREF    X3
+                            -VT
+                             VSAD
+            5 LEDLAG         X3      EFD    100.0   0.0     1.0     0.05
+            6 EXPORT EFD     EFD
+FIMCDU
+
+      38 --------------------------- AVR_38
+            1 ENTRAD                 VREF
+            2 IMPORT VOLT            VT
+            3 IMPORT VSAD            VSAD
+            4 SOMA           VREF    X3
+                            -VT
+                             VSAD
+            5 LEDLAG         X3      EFD    100.0   0.0     1.0     0.05
+            6 EXPORT EFD     EFD
+FIMCDU
+ 
+ Reading dynamic data ....... C:\Users\adriano\Desktop\ufrj\masseran2\neweng_v2\neweng.4.stb
+
+Synchronous Machine Data from DMAQ
+------------------------------------------------------------------------------------
+  Bus               Grp           Loading                  Models                   
+  No.    Bus Name   No. Unt   Active    Reactive   Gen    AVR    GOV    PSS    RTR  
++-----+------------+---+---+----------+----------+------+------+------+------+------
+    30 bus#30        10   1     100.00     100.00      1     30      0      0      0
+    31 bus#31        10   1     100.00     100.00      2     31      0      1      0
+    32 bus#32        10   1     100.00     100.00      1     32      0      0      0
+    33 bus#33        10   1     100.00     100.00      2     33      0      0      0
+    34 bus#34        10   1     100.00     100.00      1     34      0      0      0
+ 
+    35 bus#35        10   1     100.00     100.00      2     35      0      0      0
+    36 bus#36        10   1     100.00     100.00      1     36      0      0      0
+    37 bus#37        10   1     100.00     100.00      2     37      0      0      0
+    38 bus#38        10   1     100.00     100.00      1     38      0      0      0
+    39 bus#39        10   1     100.00     100.00    100      0      0      0      0
+ 
+ %Warning: ANATEM EXSI execution code.
+           The execution code data will be ignored.
+ 
+ 
+ The equipment 39 10 0 associated to the variable FMAQ   not found. Line #145.
+ The equipment 39 10 0 associated to the variable PELE   not found. Line #146.
+ The equipment 39 10 0 associated to the variable QELE   not found. Line #147.
+ The equipment 39 10 0 associated to the variable DELT   not found. Line #148.

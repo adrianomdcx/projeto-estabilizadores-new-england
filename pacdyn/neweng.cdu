@@ -1,0 +1,144 @@
+(
+(===============================================================================
+( CONTROLADORES DEFINIDOS PELO USUARIO
+(===============================================================================
+DCDU IMPR
+(
+( Regulador de Tensao de 1a. ordem
+(ncdu) ( nome cdu )
+  0030 AVR_30
+(nb) (tipo) (stip)s(vent) (vsai) ( p1 )( p2 )( p3 )( p4 ) (vmin) (vmax)
+  01 ENTRAD               Vref
+  02 IMPORT VOLT          Vt
+  03 IMPORT VSAD          Vsad
+  04 SOMA          Vref   X3
+                  -Vt     X3
+                   Vsad   X3
+  05 LEDLAG        X3     Efd     100.0   0.0   1.0  0.05
+  06 EXPORT EFD    Efd
+(DEFVA (stip) (vdef) ( d1 )
+FIMCDU
+(
+( Regulador de Tensao de 1a. ordem
+(ncdu) ( nome cdu )
+  0031 AVR_31
+(nb) (tipo) (stip)s(vent) (vsai) ( p1 )( p2 )( p3 )( p4 ) (vmin) (vmax)
+  01 ENTRAD               Vref
+  02 IMPORT VOLT          Vt
+  03 IMPORT VSAD          Vsad
+  04 SOMA          Vref   X3
+                  -Vt     X3
+                   Vsad   X3
+  05 LEDLAG        X3     Efd     100.0   0.0   1.0  0.05
+  06 EXPORT EFD    Efd
+(DEFVA (stip) (vdef) ( d1 )
+FIMCDU
+(
+( Regulador de Tensao de 1a. ordem
+(ncdu) ( nome cdu )
+  0032 AVR_32
+(nb) (tipo) (stip)s(vent) (vsai) ( p1 )( p2 )( p3 )( p4 ) (vmin) (vmax)
+  01 ENTRAD               Vref
+  02 IMPORT VOLT          Vt
+  03 IMPORT VSAD          Vsad
+  04 SOMA          Vref   X3
+                  -Vt     X3
+                   Vsad   X3
+  05 LEDLAG        X3     Efd     100.0   0.0   1.0  0.05
+  06 EXPORT EFD    Efd
+(DEFVA (stip) (vdef) ( d1 )
+FIMCDU
+(
+( Regulador de Tensao de 1a. ordem
+(ncdu) ( nome cdu )
+  0033 AVR_33
+(nb) (tipo) (stip)s(vent) (vsai) ( p1 )( p2 )( p3 )( p4 ) (vmin) (vmax)
+  01 ENTRAD               Vref
+  02 IMPORT VOLT          Vt
+  03 IMPORT VSAD          Vsad
+  04 SOMA          Vref   X3
+                  -Vt     X3
+                   Vsad   X3
+  05 LEDLAG        X3     Efd     100.0   0.0   1.0  0.05
+  06 EXPORT EFD    Efd
+(DEFVA (stip) (vdef) ( d1 )
+FIMCDU
+(
+( Regulador de Tensao de 1a. ordem
+(ncdu) ( nome cdu )
+  0034 AVR_34
+(nb) (tipo) (stip)s(vent) (vsai) ( p1 )( p2 )( p3 )( p4 ) (vmin) (vmax)
+  01 ENTRAD               Vref
+  02 IMPORT VOLT          Vt
+  03 IMPORT VSAD          Vsad
+  04 SOMA          Vref   X3
+                  -Vt     X3
+                   Vsad   X3
+  05 LEDLAG        X3     Efd     100.0   0.0   1.0  0.05
+  06 EXPORT EFD    Efd
+(DEFVA (stip) (vdef) ( d1 )
+FIMCDU
+(
+( Regulador de Tensao de 1a. ordem
+(ncdu) ( nome cdu )
+  0035 AVR_35
+(nb) (tipo) (stip)s(vent) (vsai) ( p1 )( p2 )( p3 )( p4 ) (vmin) (vmax)
+  01 ENTRAD               Vref
+  02 IMPORT VOLT          Vt
+  03 IMPORT VSAD          Vsad
+  04 SOMA          Vref   X3
+                  -Vt     X3
+                   Vsad   X3
+  05 LEDLAG        X3     Efd     100.0   0.0   1.0  0.05
+  06 EXPORT EFD    Efd
+(DEFVA (stip) (vdef) ( d1 )
+FIMCDU
+(
+( Regulador de Tensao de 1a. ordem
+(ncdu) ( nome cdu )
+  0036 AVR_36
+(nb) (tipo) (stip)s(vent) (vsai) ( p1 )( p2 )( p3 )( p4 ) (vmin) (vmax)
+  01 ENTRAD               Vref
+  02 IMPORT VOLT          Vt
+  03 IMPORT VSAD          Vsad
+  04 SOMA          Vref   X3
+                  -Vt     X3
+                   Vsad   X3
+  05 LEDLAG        X3     Efd     100.0   0.0   1.0  0.05
+  06 EXPORT EFD    Efd
+(DEFVA (stip) (vdef) ( d1 )
+FIMCDU
+(
+( Regulador de Tensao de 1a. ordem
+(ncdu) ( nome cdu )
+  0037 AVR_37
+(nb) (tipo) (stip)s(vent) (vsai) ( p1 )( p2 )( p3 )( p4 ) (vmin) (vmax)
+  01 ENTRAD               Vref
+  02 IMPORT VOLT          Vt
+  03 IMPORT VSAD          Vsad
+  04 SOMA          Vref   X3
+                  -Vt     X3
+                   Vsad   X3
+  05 LEDLAG        X3     Efd     100.0   0.0   1.0  0.05
+  06 EXPORT EFD    Efd
+(DEFVA (stip) (vdef) ( d1 )
+FIMCDU
+(
+( Regulador de Tensao de 1a. ordem
+(ncdu) ( nome cdu )
+  0038 AVR_38
+(nb) (tipo) (stip)s(vent) (vsai) ( p1 )( p2 )( p3 )( p4 ) (vmin) (vmax)
+  01 ENTRAD               Vref
+  02 IMPORT VOLT          Vt
+  03 IMPORT VSAD          Vsad
+  04 SOMA          Vref   X3
+                  -Vt     X3
+                   Vsad   X3
+  05 LEDLAG        X3     Efd     100.0   0.0   1.0  0.05
+  06 EXPORT EFD    Efd
+(DEFVA (stip) (vdef) ( d1 )
+FIMCDU
+(
+999999
+(
+FIM

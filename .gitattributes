@@ -1,0 +1,7 @@
+# Mantém os arquivos originais do estudo sem conversão de finais de linha.
+* -text
+
+# A documentação do repositório usa UTF-8 e LF.
+*.md text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
