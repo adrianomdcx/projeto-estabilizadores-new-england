@@ -1,4 +1,4 @@
-# CGERI: projeto de PSSs para o sistema New England
+# Projeto de estabilizadores para o sistema New England
 
 Este repositório reúne os arquivos do trabalho de CGERI sobre o projeto de estabilizadores de sistemas de potência (PSSs) para o sistema New England modificado. O estudo parte do caso sem estabilizadores e acompanha a inclusão dos PSSs nas máquinas, usando análise modal, resíduos e respostas em frequência para orientar os ajustes.
 
