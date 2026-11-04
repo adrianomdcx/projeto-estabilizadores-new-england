@@ -1,6 +1,6 @@
 # Projeto de estabilizadores para o sistema New England
 
-Este repositório reúne os arquivos do trabalho de CGERI sobre o projeto de estabilizadores de sistemas de potência (PSSs) para o sistema New England modificado. O estudo parte do caso sem estabilizadores e acompanha a inclusão dos PSSs nas máquinas, usando análise modal, resíduos e respostas em frequência para orientar os ajustes.
+Este repositório reúne os arquivos do trabalho sobre o projeto de estabilizadores de sistemas de potência (PSSs) para o sistema New England modificado. O estudo parte do caso sem estabilizadores e acompanha a inclusão dos PSSs nas máquinas, usando análise modal, resíduos e respostas em frequência para orientar os ajustes.
 
 O trabalho foi desenvolvido com ANAREDE, ANATEM e PacDyn. O [relatório completo](docs/relatorio.pdf), com 61 páginas, apresenta a metodologia, os parâmetros dos controladores e a comparação das respostas no domínio do tempo para o caso base, sete PSSs e nove PSSs.
 
